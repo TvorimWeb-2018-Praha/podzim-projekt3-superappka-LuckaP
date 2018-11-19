@@ -14,20 +14,108 @@ html { box-sizing: border-box; }
 */
 
 body {
-    padding: 0;
-    margin: 0;
+    padding: 30px;
+    margin: 30px;
     background-color: #e5e5e5;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    border: 30px;
 }
 
 .obal {
     width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background: white;
+    background:
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #25133d;
+  padding: 20px;
+}
+
+a:hover {
+	background-color: white;
+  color: #48418e;
+  text-transform: uppercase;
+}
+
+.menu {
+  background-color: white;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 5px;
+
+}
+
+.nadpis {
+  color: white;
+  letter-spacing: 5px;
+  font-size: 80px;
+  padding-left: 20px;
+}
+
+.slogan {
+  color: white;
+  width: 40%;
+  font-size: 30px;
+  padding: 20px;
+}
+
+img.pozadi {
+  background-image: URL("images/pozadi.jpg");
+}
+
+.odkazy {
+  border: 1px solid #48418e;
+  border: 5px;
+  border-radius: 10px;
+  margin: 0;
+
+}
+ul.odkazy {
+  display: flex;
+  list-style: none;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50%;
+}
+
+div.vyhody {
+  width: 960px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+h1, h2, h3 {
+  color: #48418e;
+}
+
+.osloveni {
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.zapati {
+width: 960px;
+text-align: center;
+color: white;
+background-color: #48418e;
+padding: 2px;
+}
+
+/* ----- Ahoj kluci, zde moje rozpracovaná verze, dostala jsem se k odkazu na úkol až v sobotu, a dneska se totálně zasekla  snad už na všem. Prosím, nedaří se mi nahodit pozadí a obrázek + správné odsazení obrázků níže. Zřejmě chyba už v html verzi :( Poradíte, prosím?----- */
