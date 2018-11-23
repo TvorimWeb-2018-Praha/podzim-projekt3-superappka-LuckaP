@@ -14,36 +14,48 @@ html { box-sizing: border-box; }
 */
 
 body {
-    padding: 30px;
-    margin: 30px;
+    padding: 0px;
+    margin: 0px;
     background-color: #e5e5e5;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    border: 30px;
 }
 
 .obal {
     width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background:
+    background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
 
-a {
+.hlavicka {
+  display: flex;
+  align-items: center;
+}
+
+.hlavicka-logo {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.menu a {
   display: block;
   text-decoration: none;
   color: #25133d;
-  padding: 20px;
+  padding: 10px;
 }
 
-a:hover {
+.menu a:hover {
 	background-color: white;
   color: #48418e;
   text-transform: uppercase;
+  padding: 15px 30px;
 }
 
 .menu {
@@ -52,70 +64,93 @@ a:hover {
   list-style: none;
   justify-content: flex-start;
   padding: 5px;
+}
 
+.telo {
+  position: relative;
+  background: #48418e url('images/pozadi.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 60px 425px 60px 40px;
 }
 
 .nadpis {
   color: white;
-  letter-spacing: 5px;
-  font-size: 80px;
-  padding-left: 20px;
+  font-size: 90px;
+  font-weight: normal;
+  margin: 30px 0 0 0;
 }
 
 .slogan {
   color: white;
-  width: 40%;
-  font-size: 30px;
-  padding: 20px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 30px 0 100px 0px;
 }
 
-img.pozadi {
-  background-image: URL("images/pozadi.jpg");
+.foto {
+
 }
 
 .odkazy {
-  border: 1px solid #48418e;
-  border: 5px;
-  border-radius: 10px;
-  margin: 0;
-
-}
-ul.odkazy {
+  font-size: 20px;
   display: flex;
   list-style: none;
-  color: white;
-  padding: 10px 20px 10px 20px;
-  border-radius: 50%;
 }
 
-div.vyhody {
-  width: 960px;
-  background-color: white;
+.odkazy a {
+border-radius: 8px;
+border: 1px solid #fff;
+color: #fff;
+text-decoration: none;
+padding: 20px 30px;
+margin-right: 23px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+font-size: 20px;
+line-height: 1;
+transition: background-color 250ms;
+}
+
+.odkazy a {
+  background-color: #48418e;
+}
+
+.odkazy a:hover {
+  background-color: #25133d;
+}
+
+.doplnkove-informace-box {
   display: flex;
-  justify-content: center;
   text-align: center;
-  align-content: center;
 }
 
-h1, h2, h3 {
+.vyhody {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.osloveni-titul {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 700;
   color: #48418e;
 }
 
-.osloveni {
+div.p {
   text-align: center;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0;
+  margin: 0;
 }
 
 .zapati {
-width: 960px;
-text-align: center;
-color: white;
-background-color: #48418e;
-padding: 2px;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #48418e;
+  color: #fff;
+  text-align: center;
 }
 
-/* ----- Ahoj kluci, zde moje rozpracovaná verze, dostala jsem se k odkazu na úkol až v sobotu, a dneska se totálně zasekla  snad už na všem. Prosím, nedaří se mi nahodit pozadí a obrázek + správné odsazení obrázků níže. Zřejmě chyba už v html verzi :( Poradíte, prosím?----- */
+/* ----- Ahoj kluci, snažila jsem se dokončit úkol a mám dotaz, nedokážu si poradit s obrázkem, "schovává" se mi za pozadí a neumím najít, kde je zakopaný pes... Díky! */
