@@ -32,7 +32,7 @@ body {
 
 /* ----- zde začni psát vlastní CSS ----- */
 
-.hlavicka {
+header.hlavicka {
   display: flex;
   align-items: center;
 }
@@ -41,21 +41,8 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0 10px;
-}
-
-.menu a {
-  display: block;
-  text-decoration: none;
-  color: #25133d;
-  padding: 10px;
-}
-
-.menu a:hover {
-	background-color: white;
-  color: #48418e;
-  text-transform: uppercase;
-  padding: 15px 30px;
+  margin: 0 40px;
+  display: flex;
 }
 
 .menu {
@@ -64,6 +51,20 @@ body {
   list-style: none;
   justify-content: flex-start;
   padding: 5px;
+}
+
+.menu a {
+  color: #25133d;
+  text-decoration: none;
+  padding: 15px 30px;
+  transition: background-color 250ms, color 250ms;
+}
+
+.menu a:hover {
+	background-color: white;
+  color: #48418e;
+  text-transform: uppercase;
+  padding: 15px 30px;
 }
 
 .telo {
@@ -90,7 +91,9 @@ body {
 }
 
 .foto {
-
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .odkazy {
@@ -153,4 +156,4 @@ div.p {
   text-align: center;
 }
 
-/* ----- Ahoj kluci, snažila jsem se dokončit úkol a mám dotaz, nedokážu si poradit s obrázkem, "schovává" se mi za pozadí a neumím najít, kde je zakopaný pes... Díky! */
+/* ----- Ahoj kluci, zasílám opravenou verzi. Díky! Lucka*/
